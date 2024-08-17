@@ -1,0 +1,697 @@
+/* Estilos específicos para tamaños de pantalla pequeños (por ejemplo, dispositivos móviles) */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Ajusta el espaciado del contenedor en pantallas pequeñas */
+    }
+
+    .hero {
+        padding: 20px; /* Ajusta el espaciado del héroe en pantallas pequeñas */
+    }
+
+    .feature-box {
+        width: 100%; /* Haz que los elementos ocupen todo el ancho en pantallas pequeñas */
+        margin: 10px 0; /* Agrega espacio entre los elementos */
+    }
+
+    .feature-box img {
+        max-width: 60px; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
+    }
+
+    .footer-list {
+        flex-direction: column; /* Coloca las listas una encima de la otra en pantallas pequeñas */
+    }
+    
+    .footer-list-item {
+        margin-bottom: 20px; /* Agrega espacio entre los elementos de la lista en pantallas pequeñas */
+    }
+
+    .shorten-link {
+        flex-direction: column; /* Coloca los elementos en columnas en pantallas pequeñas */
+        text-align: center; /* Centra el contenido en pantallas pequeñas */
+    }
+
+    .shorten-link input[type="text"] {
+        width: 100%; /* Ocupa todo el ancho disponible en pantallas pequeñas */
+        margin-right: 0; /* Elimina el margen derecho para que el botón se alinee correctamente */
+    }
+}
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+/*-------Header-------*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+    justify-content: space-between;
+}
+
+.login-signup {
+    margin-left: auto; /* Mueve la sección a la derecha */
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Distribute elements across the header */
+    align-items: center;
+    max-width: 100%; /* Full width for mobile */
+    margin: 0 auto;
+}
+
+.logo img {
+    max-width: 80px; /* Adjust logo size for smaller screens */
+    display: block; /* Center logo vertically */
+    margin: 20px auto; /* Add spacing around the logo */
+}
+
+.login-signup {
+    display: flex;
+    margin-left: 0; /* Move the section to the left for small screens */
+}
+
+.login-signup button {
+    margin-right: 0; /* Remove spacing between buttons for small screens */
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px; /* Add spacing between buttons for mobile */
+}
+
+/* Additional styles for mobile */
+@media (max-width: 375px) {
+    .logo img {
+        max-width: 60px; /* Adjust logo size for smaller screens */
+    }
+
+    nav ul {
+        display: none; /* Hide list items for mobile */
+    }
+}
+
+/*-------Hero (sección destacada de la web)-------*/
+.hero {
+    padding: 50px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.img1 {
+    max-width: 100%;
+    display:block ;
+}
+
+.img2 {
+    display: none; 
+}
+
+.hero-text {
+    font-size: 36px; /* Tamaño de fuente para el título h1 */
+}
+
+.button-hero {
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    border: none;
+    padding: 20px 45px; /* Aumenta el tamaño del botón */
+    border-radius: 55px; /* Redondea las esquinas y los lados del botón */
+    cursor: pointer;
+    margin: 10px auto; /* Centra horizontalmente y agrega margen superior e inferior */
+    display: block; /* Convierte el botón en un elemento de bloque para centrarlo */
+    text-align: center; /* Centra el texto dentro del botón */
+}
+
+/* Additional styles for smaller screens */
+
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column; /* Stacks content vertically on smaller screens */
+        align-items: center;
+    }
+
+    .hero-text {
+        padding: 0;
+        text-align: center;
+    }
+
+    .img1 {
+        width: 100%;
+        display: none;
+    }
+
+    .img2 {
+        width: 100%;
+        display: block;
+    }
+    
+    .top-section {
+        width: 100%;
+        height: 50%;
+        background-color: #f4f4f4;
+    }
+    
+    .hero {
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .hero-content {
+        display: flex;
+        flex-wrap: wrap; /* Wraps content to a new line on smaller screens */
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .hero-text {
+        flex: 1;
+        padding-right: 20px;
+    }
+    
+    
+    .hero-text h1 {
+        font-size: 36px; /* Font size for h1 heading */
+        color: #333;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    
+    .hero-text p {
+        font-size: 16px; /* Font size for paragraph */
+        color: #333;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+    
+    .button-hero {
+        padding: 10px 20px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+    
+}
+
+
+/*-------advanced-statistics-------*/
+.advanced-statistics {
+    text-align: center; /* Para centrar el contenido horizontalmente */
+}
+
+.advanced-statistics h2 {
+    margin: 0; /* Elimina el margen superior del título h2 para centrarlo verticalmente */
+}
+
+.advanced-statistics p {
+    color: rgba(128, 128, 128, 0.75); /* Establece el color gris con 75% de opacidad al párrafo p */
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+ul li {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+button {
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/*ver...................*/
+/*body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}*/
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-section {
+    width: 100%;
+    height: 50%;
+}
+
+.divider-center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #ccc;
+    margin: 0 auto;
+}
+
+/*
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: red;
+    font-weight: bold;
+  }
+*/
+
+
+  
+/*ver...................*/
+/*
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}*/
+
+
+
+
+/*
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: red;
+    font-weight: bold;
+  }*/
+
+
+
+/*-------Parte del formulario-------*/
+/* Estilos para la línea divisora */
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: transparent;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 18px;
+    color: #fff;
+    border: 1px solid red;
+    margin-bottom: 10px;
+}
+
+.shorten-link {
+    text-align: center;
+    margin: 20px auto;
+    background: hsl(257, 27%, 26%);
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; /* En lugar de space-between */
+    align-items: center;
+    max-width: 60%;
+}
+
+.shorten-link input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 15px;
+    flex: 1;
+}
+
+
+.shorten-link button {
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Styles for the shorten-link2 element */
+.shorten-link2 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(257, 27%, 26%);
+    padding: 40px;
+    border-radius: 10px;
+    width: 80%; /* Increased width to 80% */
+    position: relative;
+    margin: 0 auto;
+}
+
+/* Styles for the input field */
+.shorten-link2 input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 15px;
+    flex: 1;
+}
+
+/* Styles for the button */
+.shorten-link2 button {
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    /* Responsive adjustments for smaller screens */
+    .shorten-link2 {
+        flex-direction: column; /* Arrange images in a column on smaller screens */
+        width: 100%; /* Remove width restriction for smaller screens */
+        padding: 20px;
+    }
+
+    .shorten-link2 input {
+        width: 100%; /* Make feature boxes full width on smaller screens */
+        margin: 10px; /* Adjust margin to maintain spacing between feature boxes */
+    }
+    .shorten-link2 button {
+        width: 100%; /* Make feature boxes full width on smaller screens */
+        margin: 10px; /* Adjust margin to maintain spacing between feature boxes */
+    }
+}
+
+/*------- Down-section aquí estan el mensaje y las 3 imagenes -------*/
+/*------- Down-section aquí estan el mensaje y las 3 imagenes -------*/
+/*------- Down-section aquí estan el mensaje y las 3 imagenes -------*/
+/*------- Down-section aquí estan el mensaje y las 3 imagenes -------*/
+/*------- Down-section aquí estan el mensaje y las 3 imagenes -------*/
+/*------- Down-section aquí estan el mensaje y las 3 imagenes -------*/
+/*------- Down-section aquí estan el mensaje y las 3 imagenes -------*/
+/* Styles for the down-section */
+.down-section {
+    background-color: hsl(257, 7%, 63%, 20%); /* Background color for the down-section (gray) */
+    display: flex; /* Use flexbox to align content vertically */
+    align-items: center; /* Align content in the center (vertically) */
+    flex-direction: column; /* Arrange content in a column */
+    padding: 20px;
+}
+
+/* Styles for the heading */
+.down-section h1 {
+    font-size: 36px; /* Heading font size */
+    text-align: center; /* Center the heading text */
+    margin-bottom: 20px; /* Add bottom margin to the heading */
+    color: #0f172a; /* Text color for the heading */
+}
+
+/* Styles for the paragraph */
+.down-section p {
+    font-size: 18px; /* Paragraph font size */
+    text-align: center; /* Center the paragraph text */
+    color: hsl(257, 7%, 63%); /* Text color for the paragraph */
+}
+
+/* Styles for the images container */
+.images {
+    display: flex; /* Use flexbox to arrange images in a row */
+    justify-content: space-between; /* Distribute images evenly across the row */
+    width: 80%; /* Limit the width of the images container to 80% */
+    margin: 0 auto; /* Center the images container horizontally */
+}
+
+/* Styles for the feature boxes */
+.feature-box {
+    display: flex; /* Use flexbox to align content vertically */
+    flex-direction: column; /* Arrange content in a column */
+    align-items: center; /* Center content within the feature box */
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-box img {
+    max-width: 100%; /* Adjust image size */
+    margin: 2px; /* Center the image vertically */
+    background-color: hsl(257, 27%, 26%);
+    padding: 30px;
+    border-radius: 100%;
+}
+
+.feature-box h3 {
+    font-size: 24px; /* Heading font size */
+    margin: 10px 0; /* Add top and bottom margins to the heading */
+}
+
+.feature-box p {
+    font-size: 14px; /* Paragraph font size */
+    color: #555; /* Text color for the paragraph */
+}
+
+@media (max-width: 768px) {
+    /* Responsive adjustments for smaller screens */
+    .images {
+        flex-direction: column; /* Arrange images in a column on smaller screens */
+        width: 100%; /* Remove width restriction for smaller screens */
+    }
+
+    .feature-box {
+        width: 100%; /* Make feature boxes full width on smaller screens */
+        margin: 10px 0; /* Adjust margin to maintain spacing between feature boxes */
+    }
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-section {
+    width: 100%;
+    height: 50%;
+}
+
+/*
+.divider {
+    width: 2px;
+    background-color: gray;
+    height: 100%;  Ajusta la altura al 100% para que divida el contenedor completamente 
+    margin: 0 10px;
+}*/
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin: 20px;
+    color: hsl(260, 8%, 14%)
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+img {
+    max-width: 100%;
+    margin: 0 10px;
+}
+
+.footer-main {
+    background: hsl(257, 27%, 26%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-main {
+    background-color: deeppink;
+    
+}
+
+/*------- Estilos para el footer -------*/
+/*------- Estilos para el footer -------*/
+/*------- Estilos para el footer -------*/
+/*------- Estilos para el footer -------*/
+/*------- Estilos para el footer -------*/
+/*------- Estilos para el footer -------*/
+/*------- Estilos para el footer -------*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    max-width: 100px;
+    filter: brightness(0) invert(1); /* Change logo color to white */
+}
+
+.footer-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-list-item {
+    margin-right: 30px;
+}
+
+.footer-list-item h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-list-item .sub-list li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sub-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #fff; /* Change sublist text color to white */
+    opacity: 0.6;
+}
+
+.sub-list li {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-icons img {
+    max-width: 30px;
+}
+
+/* Estilo para las listas en filas */
+ul.sub-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    margin: 0;
+    padding: 0;
+}
+
+ul.sub-list li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+    /* Responsive adjustments for smaller screens */
+
+    .footer-content {
+        flex-direction: column; /* Adjust to a column layout for mobile */
+        align-items: center; /* Center content within the footer */
+        max-width: 100%; /* Full width for mobile */
+        margin: 0 auto;
+    }
+
+    .footer-list {
+        flex-direction: column; /* Adjust to a column layout for mobile */
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer-list-item {
+        margin-bottom: 20px; /* Adjust spacing between list items */
+    }
+
+    .sub-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        color: #fff; /* Change sublist text color to white */
+        opacity: 0.6;
+    }
+
+    .sub-list li {
+        margin-bottom: 10px;
+    }
+
+    .social-icons {
+        margin-left: 10px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .social-icons img {
+        max-width: 30px;
+    }
+}
+
+
